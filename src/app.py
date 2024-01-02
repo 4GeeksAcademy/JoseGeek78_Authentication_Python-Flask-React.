@@ -12,6 +12,8 @@ from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_requir
 from flask_bcrypt import Bcrypt
 from datetime import timedelta
 from flask_jwt_extended import JWTManager
+from api.utils import generate_sitemap
+
 
 ENV = "development" if os.getenv("FLASK_DEBUG") == "1" else "production"
 static_file_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), '../public/')
