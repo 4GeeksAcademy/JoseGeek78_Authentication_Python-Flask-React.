@@ -1,3 +1,56 @@
-/* 
-    General Styles used on every website (Don't Repeat Yourself)
-*/
+.gradient-background {
+    background: radial-gradient(
+        at 97% 21%, 
+        rgb(0, 128, 0) 0px, 
+        transparent 40%
+    ),
+    radial-gradient(
+        at 42% 99%, 
+        rgb(0, 100, 0) 0px, 
+        transparent 40%
+    ),
+    radial-gradient(
+        at 10% 29%, 
+        rgb(0, 75, 0) 0px, 
+        transparent 40%
+    ),
+    radial-gradient(
+        at 27% 96%, 
+        rgb(0, 64, 0) 0px, 
+        transparent 40%
+    ),
+    radial-gradient(
+        at 33% 40%, 
+        rgb(0, 51, 0) 0px, 
+        transparent 40%
+    ),
+    radial-gradient(
+        at 99% 83%, 
+        rgb(0, 85, 0) 0px, 
+        transparent 40%
+    );
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+.home_max-width {
+    max-width: 500px;
+}
+
+.waiting-cursor {
+    cursor: wait;
+}
+
+.logo-size {
+    height: 250px;
+    width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo-size {
+        height: 370px;
+        width: 370px;
+    }
+}
